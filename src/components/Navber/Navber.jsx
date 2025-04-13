@@ -33,8 +33,8 @@ const navegationData = [
 
 const Navber = () => {
 
-  const links = navegationData.map((route) => (
-    <Link route={route}></Link>
+  const links = navegationData.map(route => (
+    <Link key={route.id} route={route}></Link>
   ));
   
   const [open , setOpen] = useState(false);
